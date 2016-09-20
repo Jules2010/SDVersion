@@ -158,7 +158,8 @@
     
     if ([self resolutionSize] == Screen4Dot7inch && [UIScreen mainScreen].nativeScale > [UIScreen mainScreen].scale) {
         return YES;
-    }else if ([self resolutionSize] == Screen5Dot5inch && [UIScreen mainScreen].nativeScale < [UIScreen mainScreen].scale){
+    }
+    else if ([self resolutionSize] == Screen5Dot5inch && [UIScreen mainScreen].nativeScale > [UIScreen mainScreen].scale){
         return YES;
     }
     

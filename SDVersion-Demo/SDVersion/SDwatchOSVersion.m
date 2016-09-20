@@ -18,8 +18,14 @@
     dispatch_once(&onceToken, ^{
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        deviceNamesByCode = @{ @"Watch1,1" : @(AppleWatch38mm),
-                               @"Watch1,2" : @(AppleWatch42mm) };
+        deviceNamesByCode = @{
+                              @"Watch1,1" : @(AppleWatch),
+                              @"Watch1,2" : @(AppleWatch),
+                              @"Watch2,6" : @(AppleWatchSeries1),
+                              @"Watch2,7" : @(AppleWatchSeries1),
+                              @"Watch2,3" : @(AppleWatchSeries2),
+                              @"Watch2,4" : @(AppleWatchSeries2),
+                              };
 #pragma clang diagnostic pop
     });
     
